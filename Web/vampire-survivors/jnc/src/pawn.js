@@ -18,6 +18,10 @@ class Pawn {
   set cy(value) {
     this.element.setAttribute('cy', value)
   }
+
+  get radius() {
+    return parseFloat(this.element.getAttribute('r'))
+  }
 }
 
 export { Pawn }
